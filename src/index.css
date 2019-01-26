@@ -8,6 +8,95 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+    Login
+*/
+
+    .logo-container {
+        height: 150px;
+        background-image: url(https://via.placeholder.com/410x200/ffffee/0076ff?text=Hello+Doctor!);
+    }
+
+    .form-group {
+        padding: 15px 15px;
+    }
+
+    .form-group ons-input {
+        padding: 15px 0px;
+        width: 100%;
+    }
+
+    .form-button {
+
+    }
+
+    .form-link {
+            
+        text-align: center;
+        padding: 30px 30px;
+    }
+
+    .divider {
+        text-align: center;
+        padding: 30px 30px;
+    }
+
+/*
+    List
+*/
+
+  .list-name {
+    text-transform: capitalize;
+  }
+
+/*
+    Shimmer
+*/
+  @keyframes placeHolderShimmer {
+      0% {
+          background-position: -468px 0
+      }
+
+      100% {
+          background-position: 468px 0
+      }
+  }
+
+  .shimmer-animation {
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-name: placeHolderShimmer;
+      animation-timing-function: linear;
+  }
+
+  .linear-background {
+      background: #f6f7f8;
+      background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+      background-size: 1000px 104px;
+      height: 338px;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .line {
+      height: 15px;
+      width: 100px;
+      background-color: #fff;
+  }
+
+  .square {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+  }
+
+  .circle {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+  }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

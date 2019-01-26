@@ -6,6 +6,7 @@ import { Page, List, ListItem } from 'react-onsenui';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import HomeComponent from './home.component';
+import LoginComponent from './login.component';
 import PageComponent from './page.component';
 import ListComponent from './list.component';
 import PullToRefreshComponent from './pull.to.refresh.component';
@@ -84,6 +85,14 @@ class Header extends React.Component {
                                                     Home
                                             </ListItem>
                                         </Link>
+                                        <Link className="side-menu-links" to="/login">
+                                            <ListItem 
+                                                onClick={this.closeNavigation.bind(this)}
+                                                tappable>
+
+                                                    Login
+                                            </ListItem>
+                                        </Link>
                                         <Link className="side-menu-links" to="/page">
                                             <ListItem 
                                                 onClick={this.closeNavigation.bind(this)}
@@ -127,6 +136,11 @@ class Header extends React.Component {
                                             exact 
                                             path="/" 
                                             component={HomeComponent}>
+                                    </Route>
+                                    <Route 
+                                            exact 
+                                            path="/login" 
+                                            component={LoginComponent}>
                                     </Route>
                                     <Route 
                                             path="/page" 
